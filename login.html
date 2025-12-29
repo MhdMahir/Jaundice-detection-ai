@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Jaundice Detection AI</title>
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JS -->
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- NAVBAR (reuse same navbar) -->
+    <header class="navbar-wrapper">
+      <nav class="navbar">
+        <div class="glass-sheen"></div>
+
+        <div class="logo">
+          <span class="material-icons">local_hospital</span>
+          <span>Jaundice</span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li>
+            <button
+              class="btn-fx primary nav-cta"
+              onclick="window.location.href='index.html#contact'"
+            >
+              Contact Us
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- LOGIN SECTION -->
+    <section class="login-wrapper">
+      <div class="login-card reveal">
+        <!-- LEFT IMAGE -->
+        <div class="login-image">
+          <!-- Replace src with your image -->
+          <img src="assets/download.jfif" alt="Medical Tools" />
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="login-form">
+          <h2>
+            Welcome<br />
+            <span style="color: #2563eb">Back</span>
+          </h2>
+
+          <form>
+            <div class="field">
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+
+            <div class="field">
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+
+            <div class="login-options">
+              <a href="forgot-password.html">Forgot Password?</a>
+            </div>
+
+            <button
+              class="btn-fx primary full"
+              onclick="window.location.href='upload.html'"
+            >
+              Login
+            </button>
+
+            <button type="button" class="btn-fx learn full google-btn">
+              <img
+                src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+                alt="Google"
+              />
+              Sign in with Google
+            </button>
+
+            <p class="signup-text">
+              Don’t have an account? <a href="signup.html">Sign Up</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

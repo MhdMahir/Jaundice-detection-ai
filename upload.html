@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Image | Jaundice Detection AI</title>
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JS -->
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar-wrapper">
+      <nav class="navbar">
+        <div class="glass-sheen"></div>
+
+        <div class="logo">
+          <span class="material-icons">local_hospital</span>
+          <span>Jaundice</span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li>
+            <button
+              class="btn-fx primary nav-cta"
+              onclick="window.location.href='index.html#contact'"
+            >
+              Contact Us
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- UPLOAD SECTION -->
+    <section class="upload-wrapper">
+      <div class="upload-card reveal">
+        <h2>Upload Image</h2>
+
+        <p class="upload-text">
+          Upload a clear full body image of the baby<br />
+          for jaundice detection
+        </p>
+
+        <form class="upload-form">
+          <!-- Upload Button -->
+          <label class="upload-btn">
+            <span class="material-icons">cloud_upload</span>
+            <span>Upload Image(s)</span>
+            <input type="file" accept="image/*" multiple />
+          </label>
+
+          <!-- Preview Area -->
+          <div class="upload-preview" id="uploadPreview"></div>
+
+          <button type="submit" class="btn-fx primary full">Submit</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
